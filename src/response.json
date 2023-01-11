@@ -1,0 +1,153 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "content": "Vessels",
+            "nestedGroups": [
+                10,
+                11
+            ]
+        },
+        {
+            "id": 2,
+            "content": "Unallocated"
+        },
+        {
+            "id": 3,
+            "content": "Loose Port Calls"
+        },
+        {
+            "id": 10,
+            "content": "Production Vessels",
+            "nestedGroups": [
+                100,
+                101
+            ]
+        },
+        {
+            "id": 11,
+            "content": "Drilling Vessels",
+            "nestedGroups": [
+                102
+            ]
+        },
+        {
+            "id": 100,
+            "content": "The Navigator",
+            "className": "vessel"
+        },
+        {
+            "id": 101,
+            "content": "Mariner",
+            "className": "vessel"
+        },
+        {
+            "id": 102,
+            "content": "GH Atlantis",
+            "className": "vessel"
+        }
+    ],
+    "items": [
+        {
+            "id": 999,
+            "group": 100,
+            "type": "background",
+            "content": "<span class=\"title\">Voyage 1</span>",
+            "start": "2022-10-23 10:00:00",
+            "end": "2022-10-28 12:00:00",
+            "className": "voyage",
+            "selectable": 1,
+            "actions": [],
+            "geometry": {
+                "coordinates": [5.572043, 58.926489],
+                "type": "Point"
+            },
+            "base": {
+                "start": 998,
+                "end": 1002
+            },
+            "attachedPortCalls": [
+                998,
+                1e3,
+                1001,
+                1002
+            ]
+        },
+        {
+            "id": 998,
+            "group": 100,
+            "content": "Tananger",
+            "start": "2022-10-23 12:00:00",
+            "end": "2022-10-23 16:00:00",
+            "geometry": {
+                "coordinates": [4.941065, 59.001756],
+                "type": "Point"
+            },
+            "className": "base",
+            "type": "range",
+            "actions": [
+                {
+                    "name": "Load",
+                    "progress": 100
+                },
+                {
+                    "name": "Unload",
+                    "progress": 75
+                }
+            ],
+            "voyage": 999
+        },
+        {
+            "id": 1e3,
+            "group": 100,
+            "content": "Troll",
+            "start": "2022-10-24 12:00:00",
+            "end": "2022-10-25 16:00:00",
+            "geometry": {
+                "coordinates": [4.539885, 58.597030],
+                "type": "Point"
+            },
+            "className": "port-call",
+            "voyage": 999
+        },
+        {
+            "id": 1001,
+            "group": 100,
+            "content": "Heidrun",
+            "start": "2022-10-26 08:00:00",
+            "end": "2022-10-26 18:00:00",
+            "geometry": {
+                "coordinates": [4.377226, 58.953819],
+                "type": "Point"
+            },
+            "className": "harbour",
+            "voyage": 999
+        },
+        {
+            "id": 1002,
+            "group": 100,
+            "content": "Base",
+            "start": "2022-10-27 08:00:00",
+            "end": "2022-10-28 18:00:00",
+            "className": "base",
+            "geometry": {
+                "coordinates": [4.941065, 59.001756],
+                "type": "Point"
+            },
+            "voyage": 999
+        },
+        {
+            "id": 3e3,
+            "group": 3,
+            "content": "Example loose port call",
+            "start": "2022-10-26 00:00:00",
+            "end": "2022-10-27 00:00:00",
+            "geometry": {
+                "coordinates": [5.098818, 59.012787],
+                "type": "Point"
+            },
+            "voyage": null,
+            "className": "rig"
+        }
+    ]
+}
