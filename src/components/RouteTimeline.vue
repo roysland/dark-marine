@@ -3,7 +3,7 @@
 </template>
 <script>
 import { Timeline } from "vis-timeline/esnext";
-import { DataSet } from 'vis-data'
+import { DataSet } from 'vis-data/esnext'
 import 'vis-timeline/styles/vis-timeline-graph2d.css'
 
 export default {
